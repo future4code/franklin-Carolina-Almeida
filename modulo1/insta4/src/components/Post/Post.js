@@ -43,7 +43,7 @@ const PostPhoto = styled.img`
 function Post(props){
   const [state, setState] = useState({
     curtido: false,
-    numeroCurtidas: 0,
+    numeroCurtidas:10,
     comentando: false,
     numeroComentarios: 0
   })

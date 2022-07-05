@@ -17,30 +17,32 @@ function App() {
 
         post: [
           {
-            nomeUsuario: "paulinha"
-            fotoUsuario="https://picsum.photos/50/50"
-            fotoPost="https://picsum.photos/200/150"
+            nomeUsuario: "paulinha",
+            fotoUsuario="https://picsum.photos/50/50",
+            fotoPost="https://picsum.photos/200/150",
           },
           {
-            nomeUsuario: "carolina"
-            fotoUsuario="https://picsum.photos/50/50"
-            fotoPost="https://picsum.photos/200/150"
+            nomeUsuario: "carolina",
+            fotoUsuario="https://picsum.photos/50/50",
+            fotoPost="https://picsum.photos/200/150",
           },
           {
-            nomeUsuario: "leticia"
-            fotoUsuario="https://picsum.photos/50/50"
-            fotoPost="https://picsum.photos/200/150"
+            nomeUsuario: "leticia",
+            fotoUsuario="https://picsum.photos/50/50",
+            fotoPost="https://picsum.photos/200/150",
           }
         ]
       });
 
-      const listaDeComponentes = state.post.map((post) => {
+      const listaDeComponentes = state.post.map(post) => {
         return (
-          <p>
-            {post.nomeUsuario} - {post.fotoUsuario} - {post.fotoPost}
-          </p>
+          <div>
+            <p>
+              {post.nomeUsuario} - {post.fotoUsuario} - {post.fotoPost}
+            </p>
+          </div>
         );
-      });
+      };
         
       return(
           <MainContainer>
@@ -49,7 +51,7 @@ function App() {
         );
     };
 
-};
+
 
 
 export default App;

@@ -9,31 +9,47 @@ const MainContainer = styled.div`
   align-items: center;
 `
 function App() {
-return(
-  <MainContainer>
-    <Post
-      nomeUsuario={'paulinha'}
-      fotoUsuario={'https://picsum.photos/50/50'}
-      fotoPost={'https://picsum.photos/200/150'}
-    />
 
-    <Post
-      nomeUsuario={'paulinha'}
-      fotoUsuario={'https://picsum.photos/50/50'}
-      fotoPost={'https://picsum.photos/200/150'}
-    />
+  
+    const Post = () => {
+      
+      const [state, setState] = useState({
 
-    <Post
-      nomeUsuario={'paulinha'}
-      fotoUsuario={'https://picsum.photos/50/50'}
-      fotoPost={'https://picsum.photos/200/150'}
-    />
-        </MainContainer>
+        post: [
+          {
+            nomeUsuario: "paulinha"
+            fotoUsuario="https://picsum.photos/50/50"
+            fotoPost="https://picsum.photos/200/150"
+          },
+          {
+            nomeUsuario: "carolina"
+            fotoUsuario="https://picsum.photos/50/50"
+            fotoPost="https://picsum.photos/200/150"
+          },
+          {
+            nomeUsuario: "leticia"
+            fotoUsuario="https://picsum.photos/50/50"
+            fotoPost="https://picsum.photos/200/150"
+          }
+        ]
+      });
 
+      const listaDeComponentes = state.post.map((post) => {
+        return (
+          <p>
+            {post.nomeUsuario} - {post.fotoUsuario} - {post.fotoPost}
+          </p>
+        );
+      });
         
-)
+      return(
+          <MainContainer>
+            {listaDeComponentes}
+          </MainContainer>
+        );
+    };
 
-}
+};
 
 
 export default App;

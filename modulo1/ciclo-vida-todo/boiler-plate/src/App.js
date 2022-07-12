@@ -20,19 +20,23 @@ const InputsContainer = styled.div`
 
 function App() {
   const [tarefas, setTarefa] = useState([]);
-  const [inputValue, setInputValue] = useState("");
-  const [filtro, setFiltro] = useState("")
+  const [inputValue, setInputValue] = useState("completas");
+  const [filtro, setFiltro] = useState("pendentes")
     
   useEffect() => {
     () => {
-
+      id: Date.now(),
+      texto: 'Texto da primeira tarefa',
+      completa: false
     },
     []
   };
 
   useEffect() => {
     () => {
-
+      id: Date.now(), // Explicação abaixo
+      texto: 'Texto da segunda tarefa',
+      completa: true
     },
     []
   };
@@ -42,7 +46,9 @@ function App() {
   }
 
   criaTarefa = () => {
-
+    id: Date.now(), // aqui, pode deixar o valor Date.now() para todas as tarefas as serem criadas
+    texto: // aqui, o texto da tarefa virá do input controlado guardado no estado
+    completa: false 
   }
 
   selectTarefa = (id) => {

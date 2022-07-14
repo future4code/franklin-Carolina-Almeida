@@ -1,1 +1,1 @@
-linkedin, github
+linkedin, github, slack

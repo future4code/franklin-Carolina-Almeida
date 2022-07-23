@@ -4,8 +4,7 @@ import {voltar, irParaApplication} from "/home/carolinabratos/Área de Trabalho/
 
 export const ListTripsPage = () => {
     const navigate = useNavigate()
-
-
+   
     return (
         <div>
             <p>ListTripsPage</p>

@@ -23,6 +23,7 @@ test("Teste 2", () => {
   );
 });
 
+// ERROS ENCONTRADOS
   // 1- calcula o valor errado quando seleciono todos os itens
   // 2- não filtra quando o valor máximo é 2
   // 3- mostra 5 produtos quando o valor mínimo é 2

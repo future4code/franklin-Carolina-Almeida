@@ -1,6 +1,6 @@
 import React from "react"
 import {InputsContainer, SignUpFormContainer} from "./styled"
-import {TextField} from "@material-ui/core/TextField"
+import { TextField } from "@material-ui/core"
 import {useHistory} from "react-router-dom"
 import useForm from "modulo1/cookenu/src/hooks/useForm.js"
 import Button from "@material-ui/core/Button"
@@ -46,7 +46,7 @@ const SignUpForm = ({setRightButtonText}) => {
                         name={"password"}
                         value={form.password}
                         onChange={onChange}
-                        label={"Senha"}
+                        label={"Pass"}
                         variant={"outlined"}
                         fullWidth
                         margin={"normal"}
